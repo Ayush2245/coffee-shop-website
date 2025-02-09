@@ -1,0 +1,293 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c1810;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c17f59;
+}
+
+/* Section Styles */
+section {
+  padding: 4rem 2rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c1810;
+}
+
+/* Home Section */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1447933601403-0c6688de566e");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Menu Section */
+#menu {
+  background-color: #f9f5f2;
+}
+
+#menu ul {
+  list-style: none;
+  max-width: 600px;
+  width: 100%;
+}
+
+#menu li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#menu li:hover {
+  transform: translateY(-3px);
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f9f5f2;
+}
+
+#contact p {
+  margin: 0.5rem 0;
+}
+this is my css code now what to do next? 
+
+/* Footer Styles */
+footer {
+  background-color: #2c1810;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #c17f59;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #a96b45;
+}
+#offers {
+  background-color: #fff4e6;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.offer {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#reviews {
+  background-color: #f9f5f2;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.review {
+  max-width: 600px;
+  margin: 1rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shop-name {
+  font-size: 4rem; /* Makes the text big */
+  font-weight: bold; /* Makes it bold */
+  color: #c17f59; /* A warm coffee-like color */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow for visibility */
+  text-transform: uppercase; /* Makes all letters capital */
+  letter-spacing: 2px; /* Adds space between letters */
+}
+/* Default Light Mode */
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #f5f5f5; /* Light text for visibility */
+}
+
+/* Ensure headers, links, and buttons are visible */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p {
+  color: #f5f5f5;
+}
+
+.dark-mode a {
+  color: #c17f59; /* Adjusted link color */
+}
+
+.dark-mode button {
+  background-color: #c17f59; /* Coffee-themed button */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Ensure all text is visible in dark mode */
+.dark-mode section {
+  color: #f5f5f5; /* Light text for readability */
+}
+
+/* Ensure list items, menu text, and special offers are visible */
+.dark-mode #menu,
+.dark-mode #menu li,
+.dark-mode #special-offers,
+.dark-mode #special-offers p {
+  color: #f5f5f5 !important;
+}
+
+/* Optional: Add a background color for contrast */
+.dark-mode #menu li,
+.dark-mode #special-offers p {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight contrast */
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Ensure text visibility in dark mode for all sections */
+.dark-mode section,
+.dark-mode #special-offers,
+.dark-mode #customer-reviews,
+.dark-mode #student-discount {
+  color: #f5f5f5 !important; /* Light text for readability */
+}
+
+/* Ensure list items and paragraph text are visible */
+.dark-mode #special-offers p,
+.dark-mode #customer-reviews p,
+.dark-mode #student-discount p {
+  color: #f5f5f5 !important;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight contrast */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Optional: Add a border or shadow for better readability */
+.dark-mode #special-offers,
+.dark-mode #customer-reviews,
+.dark-mode #student-discount {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}

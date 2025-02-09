@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <button id="dark-mode-toggle">🌙</button>
+
+      <h1>Welcome to Our Coffee Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1 class="shop-name">Perk & Pour</h1>
+
+      <p>Freshly brewed, just for you.</p>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li>Espresso - $3</li>
+        <li>Latte - $4</li>
+        <li>Cappuccino - $4.5</li>
+        <li>Mocha - $5</li>
+      </ul>
+    </section>
+    <section id="offers">
+      <h2>Special Offers</h2>
+      <div class="offer">
+        <h3>Buy 1 Get 1 Free</h3>
+        <p>
+          Enjoy a free coffee when you buy any latte or cappuccino. Limited time
+          only!
+        </p>
+      </div>
+      <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+          <p>
+            "Best coffee in town! The ambiance is amazing, and the staff is
+            super friendly."
+          </p>
+          <h4>- Sarah J.</h4>
+        </div>
+        <div class="review">
+          <p>
+            "A must-visit for all coffee lovers. Great flavors and a cozy vibe!"
+          </p>
+          <h4>- Mike T.</h4>
+        </div>
+      </section>
+
+      <div class="offer">
+        <h3>Student Discount</h3>
+        <p>Show your student ID and get 10% off your total bill.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are a locally owned coffee shop dedicated to providing the best
+        coffee experience.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
